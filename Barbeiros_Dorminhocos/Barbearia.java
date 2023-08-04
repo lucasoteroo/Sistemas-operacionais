@@ -50,11 +50,6 @@ public class Barbearia {
         return clientesRejeitados;
     }
 }
-Os principais pontos a serem observados neste código são:
-
-A utilização de métodos sincronizados (synchronized) para garantir que apenas uma thread possa acessar os métodos críticos da classe por vez, evitando problemas de concorrência.
-O uso de wait() e notify() para fazer a comunicação entre os clientes e o barbeiro, permitindo que o barbeiro espere até que haja um cliente disponível para atender.
-O atributo clientesRejeitados, que é incrementado sempre que um cliente não consegue encontrar uma cadeira de espera disponível.
 
 
 
